@@ -7,3 +7,7 @@ WebDriver BiDi listening on ws://127.0.0.1:63544
 Read port: 63473
 1774610100966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
