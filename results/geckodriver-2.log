@@ -1,1 +1,9 @@
 1774610097397	geckodriver	INFO	Listening on 127.0.0.1:63543
+1774610100506	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63544" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MESZAR~1\\AppData\\Local\\Temp\\rust_mozprofile33FM2B"
+Dynamically enable window occlusion 0
+1774610100757	Marionette	INFO	Marionette enabled
+1774610100820	Marionette	INFO	Listening on port 63473
+WebDriver BiDi listening on ws://127.0.0.1:63544
+Read port: 63473
+1774610100966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"

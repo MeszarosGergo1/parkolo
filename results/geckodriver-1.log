@@ -1,1 +1,13 @@
 1774610063952	geckodriver	INFO	Listening on 127.0.0.1:51380
+1774610067043	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51381" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MESZAR~1\\AppData\\Local\\Temp\\rust_mozprofilerConNe"
+Dynamically enable window occlusion 0
+1774610067277	Marionette	INFO	Marionette enabled
+1774610067339	Marionette	INFO	Listening on port 60519
+WebDriver BiDi listening on ws://127.0.0.1:51381
+Read port: 60519
+1774610067418	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://parking-garage-app.netlify.app."
+1774610073880	Marionette	INFO	Stopped listening on port 60519
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
