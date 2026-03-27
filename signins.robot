@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 
 #. Bejelentkezes ellenorzese
 #- Sikeres bejelentkezes ervenyes felhasznalonevvel es jelszoval
@@ -49,7 +49,7 @@ Ures mezok email
     Input Password    locator=//*[@id="password"]    password=asdf
     Click Button    //*[@id="login-button"]
     Sleep    1s
-    Page Should Not Contain    Kijelentkezés
+    Page Should Not Contain    Profil
     Close All Browsers
 
 Ures mezok jelszo
@@ -80,5 +80,16 @@ Kijelentkezes utan vedett oldalak eleresenek tiltasa
     Input Text    //*[@id="email"]    meszaros.gergo@diak.szbi-pg.hu
     Input Password    locator=//*[@id="password"]    password=asdfasdf
     Click Button    //*[@id="login-button"]
-    Wait Until Page Contains    Kijelentkezés
+    Wait Until Page Contains   /html/body/div/nav/div[2]/div/div[1]/button
+    Click Element    /html/body/div/nav/div[2]/div/div[1]/button
+    Wait Until Page Contains Element    /html/body/div/nav/div[2]/div/div[1]/div/button[2]
+    Click Button    /html/body/div/nav/div[2]/div/div[1]/div/button[2]
+    Wait Until Page Contains Element    /html/body/div/main/div/div[1]/div/a[1]
+    Page Should Not Contain Element    /html/body/div/nav/div[2]/div/a[1]
+    Page Should Not Contain Element    //*[@id="cars-navbarlink"]
+    Page Should Not Contain Element    /html/body/div/nav/div[2]/div/a[3]
+    Page Should Not Contain Element    /html/body/div/nav/div[2]/div/a[4]
+    Page Should Not Contain Element    /html/body/div/nav/div[2]/div/a[5]
+    Close Browser
+    
     

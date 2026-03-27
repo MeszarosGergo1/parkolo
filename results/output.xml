@@ -1,71 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-27T12:23:03.308541" rpa="false" schemaversion="5">
-<suite id="s1" name="Parkolo" source="C:\Users\MeszarosGergo\Desktop\parkolo">
-<suite id="s1-s1" name="Signins" source="C:\Users\MeszarosGergo\Desktop\parkolo\signins.robot">
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-03-27T14:21:22.146723" rpa="false" schemaversion="5">
+<suite id="s1" name="Parkolo" source="C:\Users\Gergo\Desktop\parkolo">
+<suite id="s1-s1" name="Signins" source="C:\Users\Gergo\Desktop\parkolo\signins.robot">
 <test id="s1-s1-t1" name="Kijelentkezes utan vedett oldalak eleresenek tiltasa" line="76">
-<kw name="Open Browser" owner="Selenium2Library">
-<msg time="2026-03-27T12:23:03.487990" level="INFO">Opening browser 'firefox' to base url 'https://parking-garage-app.netlify.app/'.</msg>
-<msg time="2026-03-27T12:23:03.601773" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:22.372776" level="INFO">Opening browser 'firefox' to base url 'https://parking-garage-app.netlify.app/'.</msg>
 <arg>https://parking-garage-app.netlify.app/</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-27T12:23:03.487700" elapsed="6.198743"/>
+<status status="PASS" start="2026-03-27T14:21:22.372408" elapsed="6.352125"/>
 </kw>
-<kw name="Click Element" owner="Selenium2Library">
-<msg time="2026-03-27T12:23:09.687177" level="INFO">Clicking element '//*[@id="login-link"]'.</msg>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:28.725526" level="INFO">Clicking element '//*[@id="login-link"]'.</msg>
 <arg>//*[@id="login-link"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.686791" elapsed="0.099798"/>
+<status status="PASS" start="2026-03-27T14:21:28.724918" elapsed="0.099826"/>
 </kw>
-<kw name="Wait Until Page Contains Element" owner="Selenium2Library">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>//*[@id="email"]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.786878" elapsed="0.010991"/>
+<status status="PASS" start="2026-03-27T14:21:28.825087" elapsed="0.208891"/>
 </kw>
-<kw name="Input Text" owner="Selenium2Library">
-<msg time="2026-03-27T12:23:09.798397" level="INFO">Typing text 'meszaros.gergo@diak.szbi-pg.hu' into text field '//*[@id="email"]'.</msg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:29.035054" level="INFO">Typing text 'meszaros.gergo@diak.szbi-pg.hu' into text field '//*[@id="email"]'.</msg>
 <arg>//*[@id="email"]</arg>
 <arg>meszaros.gergo@diak.szbi-pg.hu</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.798143" elapsed="0.022827"/>
+<status status="PASS" start="2026-03-27T14:21:29.034519" elapsed="0.066816"/>
 </kw>
-<kw name="Input Password" owner="Selenium2Library">
-<msg time="2026-03-27T12:23:09.821604" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg time="2026-03-27T12:23:09.841603" level="INFO">Temporally setting log level to: NONE</msg>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:29.102132" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2026-03-27T14:21:29.115282" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>locator=//*[@id="password"]</arg>
 <arg>password=asdfasdf</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.821235" elapsed="0.026201"/>
+<status status="PASS" start="2026-03-27T14:21:29.101673" elapsed="0.025723"/>
 </kw>
-<kw name="Click Button" owner="Selenium2Library">
-<msg time="2026-03-27T12:23:09.847960" level="INFO">Clicking button '//*[@id="login-button"]'.</msg>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:29.128088" level="INFO">Clicking button '//*[@id="login-button"]'.</msg>
 <arg>//*[@id="login-button"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.847710" elapsed="0.087100"/>
+<status status="PASS" start="2026-03-27T14:21:29.127720" elapsed="0.103901"/>
 </kw>
-<kw name="Wait Until Page Contains" owner="Selenium2Library">
-<arg>Kijelentkezés</arg>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-03-27T14:21:34.383836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T14:21:34.384279" level="FAIL">Text '/html/body/div/nav/div[2]/div/div[1]/button' did not appear in 5 seconds.</msg>
+<arg>/html/body/div/nav/div[2]/div/div[1]/button</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-27T12:23:09.935308" elapsed="0.210092"/>
+<status status="FAIL" start="2026-03-27T14:21:29.231974" elapsed="5.158896">Text '/html/body/div/nav/div[2]/div/div[1]/button' did not appear in 5 seconds.</status>
 </kw>
-<status status="PASS" start="2026-03-27T12:23:03.485369" elapsed="6.660554"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.391305" elapsed="0.000236"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/div[1]/div/button[2]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.391748" elapsed="0.000150"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/div[1]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.392169" elapsed="0.000136"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>/html/body/div/main/div/div[1]/div/a[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.392490" elapsed="0.000134"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/a[1]</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.392826" elapsed="0.000163"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<arg>//*[@id="cars-navbarlink"]</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.393179" elapsed="0.000136"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/a[3]</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.393537" elapsed="0.000224"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/a[4]</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.394061" elapsed="0.000234"/>
+</kw>
+<kw name="Page Should Not Contain Element" owner="SeleniumLibrary">
+<arg>/html/body/div/nav/div[2]/div/a[5]</arg>
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.394563" elapsed="0.000217"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-03-27T14:21:34.395012" elapsed="0.000163"/>
+</kw>
+<status status="FAIL" start="2026-03-27T14:21:22.369219" elapsed="12.026277">Text '/html/body/div/nav/div[2]/div/div[1]/button' did not appear in 5 seconds.</status>
 </test>
-<status status="PASS" start="2026-03-27T12:23:03.342571" elapsed="6.807737"/>
+<status status="FAIL" start="2026-03-27T14:21:22.190755" elapsed="12.210812"/>
 </suite>
-<status status="PASS" start="2026-03-27T12:23:03.312023" elapsed="6.843286"/>
+<status status="FAIL" start="2026-03-27T14:21:22.151783" elapsed="12.257312"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Parkolo" id="s1" pass="1" fail="0" skip="0">Parkolo</stat>
-<stat name="Signins" id="s1-s1" pass="1" fail="0" skip="0">Parkolo.Signins</stat>
+<stat name="Parkolo" id="s1" pass="0" fail="1" skip="0">Parkolo</stat>
+<stat name="Signins" id="s1-s1" pass="0" fail="1" skip="0">Parkolo.Signins</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-27T12:23:03.601773" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 </errors>
 </robot>
