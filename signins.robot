@@ -62,3 +62,23 @@ Ures mezok jelszo
     Sleep    1s
     Page Should Not Contain    Kijelentkezés
     Close All Browsers
+
+Hibauzenet helyes megjelenitese sikertelen bejelentkezesnel
+    Open Browser    https://parking-garage-app.netlify.app/    firefox
+    Click Element    //*[@id="login-link"]
+    Wait Until Page Contains Element    //*[@id="email"]
+    Input Text    //*[@id="email"]    meszaros.gergo@diak.szbi-pg.hu
+    Input Password    locator=//*[@id="password"]    password=asdf
+    Click Button    //*[@id="login-button"]
+    Wait Until Page Contains    text=Invalid email or password.
+    Close Browser
+
+Kijelentkezes utan vedett oldalak eleresenek tiltasa
+    Open Browser    https://parking-garage-app.netlify.app/    firefox
+    Click Element    //*[@id="login-link"]
+    Wait Until Page Contains Element    //*[@id="email"]
+    Input Text    //*[@id="email"]    meszaros.gergo@diak.szbi-pg.hu
+    Input Password    locator=//*[@id="password"]    password=asdfasdf
+    Click Button    //*[@id="login-button"]
+    Wait Until Page Contains    Kijelentkezés
+    
